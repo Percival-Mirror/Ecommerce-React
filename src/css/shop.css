@@ -1,0 +1,97 @@
+main > hr{
+    height: 50px;
+    color: #0198E1;
+}
+
+.grid-buttons-container{
+    gap: 10px;
+    min-width: 64px;
+}
+
+.grid-buttons-container button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.grid-buttons-container button svg{
+    width: 20px;
+    height: 20px;
+}
+
+.grid-buttons-container button.active svg{
+    color: orange;
+}
+
+.shop-products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shop-products-container.list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.tags-container{
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tags-container label{
+    font-size: larger;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.tags{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.tags button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 5px;
+    border-bottom: solid 1px lightgray;
+    color: darkslategray;
+}
+
+.tags button.tag-active{
+    background-color: #0198E1;
+    color: white;
+    font-weight: 500;
+}
+
+.tags button svg{
+    width: .5rem;
+}
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.filter-container select{
+    font-size: small;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 520px) {
+    .shop-products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-buttons-container{
+        display: none;
+    }
+}

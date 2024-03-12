@@ -1,0 +1,138 @@
+.login-section{
+    min-width: 100svw;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    flex-direction: column;
+}
+
+.login-container{
+    padding: 25px;
+    border: solid rgba(0, 51, 171, 0.5) 2px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.logo-clifarma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-clifarma img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-clifarma h3{
+    font-weight: 400;
+    color: #0198E1;
+}
+
+.logo-clifarma h3 span{
+    font-weight: 500;
+    color: #004797;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.remember-account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.remember-account div{
+    display: flex;
+    align-items: center;
+}
+
+.login-wrapper form button{
+    margin-top: 0px;
+}
+
+.error-msg{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    animation: error 3000ms linear infinite;
+    color: red;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+@keyframes error{
+    0%{
+        background-color: white;
+        color: red;
+    }
+    40%{
+        background-color: red;
+        color: white;
+    }
+    80%{
+        background-color: white;
+        color: red;
+    }
+    100%{
+        background-color: white;
+        color: red;
+    }
+}
+
+.register-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.divider hr{
+    flex: 1;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.google-login{
+    width: 100%;
+}
+
+.google-login button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid lightgray 1px;
+    outline: none;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.google-login button img{
+    width: 35px;
+    height: 35px;
+}

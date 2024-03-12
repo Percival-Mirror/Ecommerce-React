@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-slider {
+    width: 100%;
+    height: calc(100svh - 90px);
+    min-height: 500px;
+}
+
+.main-slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.main-slider .swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.main-slider .swiper .swiper-slide div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-slider .swiper .swiper-slide:nth-child(1) div {
+    background-image: url('/img/banner-1.jpg');
+}
+.main-slider .swiper .swiper-slide:nth-child(2) div {
+    background-image: url('/img/banner-2.jpg');
+}
+
+.category-top {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.category-top h2 {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.category-top hr {
+    flex: 1;
+    height: 1px;
+    background-color: #0198E1;
+    border: none;
+    opacity: 1;
+}
+
+.category-container {
+    padding-top: 50px;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.category-container .category-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.category-container .swiper-buttons-products {
+    display: flex;
+    gap: 5px;
+}
+
+.category-container .swiper-buttons-products button {
+    outline: none;
+    border: none;
+}
+
+.category-container .swiper-buttons-products button:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+    background: linear-gradient(225deg, rgba(0, 7, 135, 1) 0%, rgba(0, 61, 209, 1) 50%, rgba(0, 228, 255, 1) 100%);
+}
+
+.category-container .swiper-buttons-products button:nth-child(2) {
+    border-radius: 0px 10px 10px 0px;
+    background: linear-gradient(135deg, rgba(0, 7, 135, 1) 0%, rgba(0, 61, 209, 1) 50%, rgba(0, 228, 255, 1) 100%);
+}
+
+.category-container .swiper-buttons-products button svg {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+    .main-slider {
+        width: 100%;
+        height: 40svh;
+        min-height: 40svh;
+    }
+
+    .main-slider .swiper .swiper-slide div {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .category-container .swiper-buttons-products {
+        display: none;
+    }
+}
+
